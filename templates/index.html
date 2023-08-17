@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!--rubik font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Rubik:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!--custom css-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" class="img-responsive" alt="logo">
+        </div>
+        <a class="menu fas fa-bars"></a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <h1>Welcome to our Website</h1>
+        <p>Ensuring the best return on investment for<br> 
+            your bespoke SEO campaign requirement.
+        </p>
+        <button type="button" class="btn"><b>CONTACT TODAY</b></button>
+    </section>
+
+    <section class="about" id="about">
+        <div class="box-container">
+            <div class="box">
+                <h1 class="heading">About Us</h1>
+                <p>Welcome to our digital marketing hub, where strategy 
+                   and innovation converge to enhance your online brand. 
+                   Our dedicated team offers SEO, social media management, 
+                   content creation, and data-driven analytics to engage 
+                   your target audience and drive success in the digital 
+                   realm. Whether you're a startup or an established corporation, 
+                   we're your trusted partner in navigating the online marketing 
+                   landscape. Join us to unlock your brand's full potential.</p>
+            </div>
+           
+            <div class="box">
+                <h1 class="heading">Our Mission</h1>
+                <p>We're on a mission to transform your online 
+                    presence and empower your brand. Fueled by innovation and a 
+                    commitment to tangible outcomes, we leverage strategic insights 
+                    and cutting-edge techniques to drive your business beyond limits. 
+                    Our team of experts is dedicated to your brand's success, employing 
+                    a full range of services from SEO to analytics. Together, we shape 
+                    your digital identity, foster connections, and pave the way for 
+                    sustained growth in the dynamic digital landscape.
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'images/about-banner.jpg' %}" alt="about us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">Services We Provide</h1>
+        
+        <div class="box-container">
+            <div class="box">
+                <img src="{% static 'images/icon-1.jpg' %}" style="width: 50px;">
+                <h3>SEO Optimization</h3>
+                    <p>Enhances your website's visibility on search engines, driving 
+                       organic traffic and improving your online reach. It involves keyword 
+                       research, on-page optimization, and technical improvements to ensure 
+                       your content ranks higher in search results.</p>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/icon-2.png' %}" style="width: 50px;">
+                <h3>Digital Marketing</h3>
+                    <p>We're committed to amplifying your digital impact through innovative
+                       strategies. Our comprehensive services, spanning digital marketing 
+                       to analytics, shape your brand's online identity, nurture connections, 
+                       and drive lasting growth in the ever-evolving digital realm.</p>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/icon-3.webp' %}" style="width: 50px;">
+                <h3>Market Research</h3>
+                    <p>Our focus is to provide valuable market insights that drive informed 
+                       decisions. With a spectrum of services covering market research and 
+                       analysis, we shape your business strategies, refine targeting, and 
+                       pave the way for informed growth in a dynamic market landscape.</p>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/icon-4.png' %}" style="width: 50px;">
+                <h3>Keyword Targeting</h3>
+                    <p>Our goal is to optimize your keyword targeting for maximum impact. Through 
+                       meticulous research and analysis, we refine your keyword strategy, ensuring 
+                       your content connects with the right audience. With precision keyword targeting, 
+                       we enhance visibility, engagement, and drive meaningful results for your brand.</p>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/icon-5.png' %}" style="width: 50px;">
+                <h3>Email Marketing</h3>
+                    <p>We specialize in leveraging the power of email marketing to drive engagement and 
+                       growth. Our tailored strategies and data-driven approach ensure your messages 
+                       resonate with your audience. From crafting compelling campaigns to analyzing 
+                       performance, we nurture connections, spark action, and foster lasting relationships 
+                       in the digital landscape.</p>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/icon-6.png' %}" style="width: 50px;">
+                <h3>Marketing and Reporting</h3>
+                    <p>We excel in both marketing and reporting, offering a holistic approach to your brand's 
+                       success. Our dynamic strategies drive engagement and visibility, while our comprehensive 
+                       reporting provides valuable insights for informed decision-making. With our expertise, 
+                       we shape impactful marketing campaigns and deliver clear, actionable reports that fuel 
+                       your business growth.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="heading">Recent Projects</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'images/project-1.avif' %}" alt="Project-1">
+                    <div class="content">
+                        <p>SEO Optimization</p>
+                        <h3>Designing a better cinema experience</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'images/project-2.avif' %}" alt="Project-1">
+                    <div class="content">
+                        <p>Digital Marketing</p>
+                        <h3>Building design process within teams</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'images/project-3.avif' %}" alt="Project-1">
+                    <div class="content">
+                        <p>Keyword Targeting</p>
+                        <h3>How intercom brings play into their designs</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'images/project-4.avif' %}" alt="Project-1">
+                    <div class="content">
+                        <p>Marketing & Reporting</p>
+                        <h3>Examples of different types of sprints</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'images/project-5.jpg' %}" alt="Project-1">
+                    <div class="content">
+                        <p>Email Marketing</p>
+                        <h3>Stuck with to-do list, I created a new app for</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'images/project-6.jpg' %}"  alt="Project-1">
+                    <div class="content">
+                        <p>Development</p>
+                        <h3>Redesigning the NewYork times app</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <button type="button" class="btn"><a href="{% url 'contact_form' %}" target="_blank"><b>CONTACT HERE!</b></a></button>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" class="img-responsive" alt="logo">
+        </div>
+        <p>We focus on the needs of small to middle market businesses to improve and grow their 
+           return.so that your <br> site will withstand the test of time. We care about your business, 
+           which is why we work with you.</p>
+        <div class="socials">
+            <ion-icon name="logo-google"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- local js file -->
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+</body>
+</html>
